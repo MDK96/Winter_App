@@ -13,12 +13,7 @@
             <tr>
                 <td style="width: 134px">Type Name</td>
                 <td style="width: 286px" class="modal-sm">
-                    <asp:DropDownList ID="DropDownList1" runat="server" Height="20px" Width="278px" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
-                        <asp:ListItem Value="1">Document</asp:ListItem>
-                        <asp:ListItem Value="2">E Book</asp:ListItem>
-                        <asp:ListItem Value="3">PDF</asp:ListItem>
-                    </asp:DropDownList>
-                </td>
+                    <input id="Text1" style="width: 267px; height: 22px" type="text" /></td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
@@ -37,13 +32,11 @@
             </tr>
         </table>
       
-    <asp:Label ID="Label1" runat="server" Text="Name"></asp:Label>
-     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <textarea id="TextArea1" cols="15" rows="1"></textarea>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-    <asp:Label ID="Label2" runat="server" Text="Active"></asp:Label>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <textarea id="TextArea2" cols="15" rows="1"></textarea>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="false" Width="257px">
+        <Columns>
+            <asp:BoundField DataField="Name" HeaderText="Name" />
+             <asp:BoundField DataField="IsActive" HeaderText="IsActive" />
+        </Columns>
+    </asp:GridView>
 </asp:Content>
